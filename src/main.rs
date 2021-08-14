@@ -17,7 +17,7 @@ fn add(a: i32, b: i32) -> i32 {
 // if the predicate is true
 #[cfg(test)]
 mod add_function_tests {
-	use super::*;
+	use super::*;	// this declaration allows the code inside the module to access the outer function add
 	#[test]
 	fn add_works() {
 		assert_eq!(add(1, 2), 3);
